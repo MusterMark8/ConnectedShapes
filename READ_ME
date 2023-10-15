@@ -1,0 +1,8 @@
+This projects wanted to assess the ability of neural networks to recognise connected shapes in two dimensions.
+It was inspired by a proof in the popular book 'Perceptron' by Minsky and Papert, that showed that a singke perceptron can not solve this task.
+The proof is somehow abstract and I wanted to picture geometrically what was going on, therefore I produce a 'brute force' geometric proof using the simplest possible case of a 1x4 tile.
+The file 'Conn_proofs' (ITALIAN) contains a sketch of this proof and also a comment on the D-dimensional XOR problem.
+Finally, the project was to train a NN with one hidden layer that was able to complete the task and beat the Perceptron.
+Since the motivation was merely theoretical I restricted to the case of connected shapes in a 7x7 pixels square (1s and 0s).
+The training set (for supervised learning) is generated in the code 'conngen.f90' (Fortran).
+The NN is implemented in the file 'connect2.f90' (Fortran) and is written from skratch by myself.
